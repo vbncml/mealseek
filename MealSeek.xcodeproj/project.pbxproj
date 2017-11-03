@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44EA8528C214663E7FCC8120 /* Pods_MealSeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E79EFF564CCAC0DEA82D10F /* Pods_MealSeekTests.framework */; };
+		5991FE101F970F1000B41D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991FE0F1F970F1000B41D69 /* AppDelegate.swift */; };
+		5991FE121F970F1000B41D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991FE111F970F1000B41D69 /* ViewController.swift */; };
+		5991FE151F970F1000B41D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5991FE131F970F1000B41D69 /* Main.storyboard */; };
+		5991FE171F970F1000B41D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5991FE161F970F1000B41D69 /* Assets.xcassets */; };
+		5991FE1A1F970F1000B41D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5991FE181F970F1000B41D69 /* LaunchScreen.storyboard */; };
+		5991FE251F970F1000B41D69 /* MealSeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991FE241F970F1000B41D69 /* MealSeekTests.swift */; };
+		59BBB57D1F9D8C10005ADB4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59BBB57C1F9D8C10005ADB4A /* GoogleService-Info.plist */; };
+		59BBB57F1F9D9085005ADB4A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBB57E1F9D9085005ADB4A /* FirebaseManager.swift */; };
+		59BBB5811F9E0D34005ADB4A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBB5801F9E0D34005ADB4A /* Ingredient.swift */; };
+		59BBB5831F9E0D4D005ADB4A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBB5821F9E0D4D005ADB4A /* Recipe.swift */; };
+		59BBB5851F9E0D61005ADB4A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBB5841F9E0D61005ADB4A /* Meal.swift */; };
+		EBC8E4E73B839AF7FDCA5A71 /* Pods_MealSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB69AA1F94160A2A92CE9E2 /* Pods_MealSeek.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5991FE211F970F1000B41D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5991FE041F970F1000B41D69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5991FE0B1F970F1000B41D69;
+			remoteInfo = MealSeek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E79EFF564CCAC0DEA82D10F /* Pods_MealSeekTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealSeekTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFADEC24B073B2607A7EE8E /* Pods-MealSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek.release.xcconfig"; sourceTree = "<group>"; };
+		5991FE0C1F970F1000B41D69 /* MealSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991FE0F1F970F1000B41D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5991FE111F970F1000B41D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5991FE141F970F1000B41D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5991FE161F970F1000B41D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5991FE191F970F1000B41D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5991FE1B1F970F1000B41D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5991FE201F970F1000B41D69 /* MealSeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealSeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991FE241F970F1000B41D69 /* MealSeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSeekTests.swift; sourceTree = "<group>"; };
+		5991FE261F970F1000B41D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BBB57C1F9D8C10005ADB4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		59BBB57E1F9D9085005ADB4A /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		59BBB5801F9E0D34005ADB4A /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		59BBB5821F9E0D4D005ADB4A /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		59BBB5841F9E0D61005ADB4A /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6BB69AA1F94160A2A92CE9E2 /* Pods_MealSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99580D9F3E5C1EFDA32701DF /* Pods-MealSeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealSeekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealSeekTests/Pods-MealSeekTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD1292D16090A7BCE0DBDD7C /* Pods-MealSeekTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealSeekTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealSeekTests/Pods-MealSeekTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CB352801E9D89BFE5D7CDE /* Pods-MealSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5991FE091F970F1000B41D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC8E4E73B839AF7FDCA5A71 /* Pods_MealSeek.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991FE1D1F970F1000B41D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EA8528C214663E7FCC8120 /* Pods_MealSeekTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D2F19AC2121355C42B943A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BB69AA1F94160A2A92CE9E2 /* Pods_MealSeek.framework */,
+				0E79EFF564CCAC0DEA82D10F /* Pods_MealSeekTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5820695587D702BD2E83F438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CB352801E9D89BFE5D7CDE /* Pods-MealSeek.debug.xcconfig */,
+				2BFADEC24B073B2607A7EE8E /* Pods-MealSeek.release.xcconfig */,
+				BD1292D16090A7BCE0DBDD7C /* Pods-MealSeekTests.debug.xcconfig */,
+				99580D9F3E5C1EFDA32701DF /* Pods-MealSeekTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5991FE031F970F1000B41D69 = {
+			isa = PBXGroup;
+			children = (
+				5991FE0E1F970F1000B41D69 /* MealSeek */,
+				5991FE231F970F1000B41D69 /* MealSeekTests */,
+				5991FE0D1F970F1000B41D69 /* Products */,
+				5820695587D702BD2E83F438 /* Pods */,
+				2D2F19AC2121355C42B943A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5991FE0D1F970F1000B41D69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5991FE0C1F970F1000B41D69 /* MealSeek.app */,
+				5991FE201F970F1000B41D69 /* MealSeekTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5991FE0E1F970F1000B41D69 /* MealSeek */ = {
+			isa = PBXGroup;
+			children = (
+				59BBB57C1F9D8C10005ADB4A /* GoogleService-Info.plist */,
+				5991FE0F1F970F1000B41D69 /* AppDelegate.swift */,
+				5991FE111F970F1000B41D69 /* ViewController.swift */,
+				5991FE131F970F1000B41D69 /* Main.storyboard */,
+				5991FE161F970F1000B41D69 /* Assets.xcassets */,
+				5991FE181F970F1000B41D69 /* LaunchScreen.storyboard */,
+				5991FE1B1F970F1000B41D69 /* Info.plist */,
+				59BBB57E1F9D9085005ADB4A /* FirebaseManager.swift */,
+				59BBB5801F9E0D34005ADB4A /* Ingredient.swift */,
+				59BBB5821F9E0D4D005ADB4A /* Recipe.swift */,
+				59BBB5841F9E0D61005ADB4A /* Meal.swift */,
+			);
+			path = MealSeek;
+			sourceTree = "<group>";
+		};
+		5991FE231F970F1000B41D69 /* MealSeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				5991FE241F970F1000B41D69 /* MealSeekTests.swift */,
+				5991FE261F970F1000B41D69 /* Info.plist */,
+			);
+			path = MealSeekTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5991FE0B1F970F1000B41D69 /* MealSeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5991FE291F970F1000B41D69 /* Build configuration list for PBXNativeTarget "MealSeek" */;
+			buildPhases = (
+				F31CA2DEC6F62AF680206C79 /* [CP] Check Pods Manifest.lock */,
+				5991FE081F970F1000B41D69 /* Sources */,
+				5991FE091F970F1000B41D69 /* Frameworks */,
+				5991FE0A1F970F1000B41D69 /* Resources */,
+				6B70F5560740D535794C4B79 /* [CP] Embed Pods Frameworks */,
+				9D94D7500B29474651BA86DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MealSeek;
+			productName = MealSeek;
+			productReference = 5991FE0C1F970F1000B41D69 /* MealSeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5991FE1F1F970F1000B41D69 /* MealSeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5991FE2C1F970F1000B41D69 /* Build configuration list for PBXNativeTarget "MealSeekTests" */;
+			buildPhases = (
+				ADE8D524E12A9BC4CE543960 /* [CP] Check Pods Manifest.lock */,
+				5991FE1C1F970F1000B41D69 /* Sources */,
+				5991FE1D1F970F1000B41D69 /* Frameworks */,
+				5991FE1E1F970F1000B41D69 /* Resources */,
+				BD416D41B95D61A0AD0B8D26 /* [CP] Embed Pods Frameworks */,
+				44E58CC8793F05FF14D8C264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5991FE221F970F1000B41D69 /* PBXTargetDependency */,
+			);
+			name = MealSeekTests;
+			productName = MealSeekTests;
+			productReference = 5991FE201F970F1000B41D69 /* MealSeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5991FE041F970F1000B41D69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KBTU;
+				TargetAttributes = {
+					5991FE0B1F970F1000B41D69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					5991FE1F1F970F1000B41D69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5991FE0B1F970F1000B41D69;
+					};
+				};
+			};
+			buildConfigurationList = 5991FE071F970F1000B41D69 /* Build configuration list for PBXProject "MealSeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5991FE031F970F1000B41D69;
+			productRefGroup = 5991FE0D1F970F1000B41D69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5991FE0B1F970F1000B41D69 /* MealSeek */,
+				5991FE1F1F970F1000B41D69 /* MealSeekTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5991FE0A1F970F1000B41D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5991FE1A1F970F1000B41D69 /* LaunchScreen.storyboard in Resources */,
+				59BBB57D1F9D8C10005ADB4A /* GoogleService-Info.plist in Resources */,
+				5991FE171F970F1000B41D69 /* Assets.xcassets in Resources */,
+				5991FE151F970F1000B41D69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991FE1E1F970F1000B41D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44E58CC8793F05FF14D8C264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MealSeekTests/Pods-MealSeekTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B70F5560740D535794C4B79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D94D7500B29474651BA86DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE8D524E12A9BC4CE543960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MealSeekTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD416D41B95D61A0AD0B8D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MealSeekTests/Pods-MealSeekTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F31CA2DEC6F62AF680206C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MealSeek-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5991FE081F970F1000B41D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BBB5811F9E0D34005ADB4A /* Ingredient.swift in Sources */,
+				59BBB57F1F9D9085005ADB4A /* FirebaseManager.swift in Sources */,
+				5991FE121F970F1000B41D69 /* ViewController.swift in Sources */,
+				5991FE101F970F1000B41D69 /* AppDelegate.swift in Sources */,
+				59BBB5851F9E0D61005ADB4A /* Meal.swift in Sources */,
+				59BBB5831F9E0D4D005ADB4A /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991FE1C1F970F1000B41D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5991FE251F970F1000B41D69 /* MealSeekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5991FE221F970F1000B41D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5991FE0B1F970F1000B41D69 /* MealSeek */;
+			targetProxy = 5991FE211F970F1000B41D69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5991FE131F970F1000B41D69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5991FE141F970F1000B41D69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5991FE181F970F1000B41D69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5991FE191F970F1000B41D69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5991FE271F970F1000B41D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5991FE281F970F1000B41D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5991FE2A1F970F1000B41D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CB352801E9D89BFE5D7CDE /* Pods-MealSeek.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MealSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MealSeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5991FE2B1F970F1000B41D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFADEC24B073B2607A7EE8E /* Pods-MealSeek.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MealSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MealSeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5991FE2D1F970F1000B41D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1292D16090A7BCE0DBDD7C /* Pods-MealSeekTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MealSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MealSeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealSeek.app/MealSeek";
+			};
+			name = Debug;
+		};
+		5991FE2E1F970F1000B41D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99580D9F3E5C1EFDA32701DF /* Pods-MealSeekTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MealSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MealSeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealSeek.app/MealSeek";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5991FE071F970F1000B41D69 /* Build configuration list for PBXProject "MealSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991FE271F970F1000B41D69 /* Debug */,
+				5991FE281F970F1000B41D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5991FE291F970F1000B41D69 /* Build configuration list for PBXNativeTarget "MealSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991FE2A1F970F1000B41D69 /* Debug */,
+				5991FE2B1F970F1000B41D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5991FE2C1F970F1000B41D69 /* Build configuration list for PBXNativeTarget "MealSeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991FE2D1F970F1000B41D69 /* Debug */,
+				5991FE2E1F970F1000B41D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5991FE041F970F1000B41D69 /* Project object */;
+}
