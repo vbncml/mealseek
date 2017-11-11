@@ -10,6 +10,7 @@
 		44EA8528C214663E7FCC8120 /* Pods_MealSeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E79EFF564CCAC0DEA82D10F /* Pods_MealSeekTests.framework */; };
 		590CF0DC1FB2C21600C91FAF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590CF0DB1FB2C21600C91FAF /* SearchViewController.swift */; };
 		590CF0DE1FB2C29C00C91FAF /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590CF0DD1FB2C29C00C91FAF /* IngredientCell.swift */; };
+		59211B911FB7023C00A81B46 /* ChoosenIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59211B901FB7023C00A81B46 /* ChoosenIngredientCell.swift */; };
 		5991FE101F970F1000B41D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991FE0F1F970F1000B41D69 /* AppDelegate.swift */; };
 		5991FE121F970F1000B41D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991FE111F970F1000B41D69 /* ViewController.swift */; };
 		5991FE151F970F1000B41D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5991FE131F970F1000B41D69 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		2BFADEC24B073B2607A7EE8E /* Pods-MealSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealSeek/Pods-MealSeek.release.xcconfig"; sourceTree = "<group>"; };
 		590CF0DB1FB2C21600C91FAF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		590CF0DD1FB2C29C00C91FAF /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		59211B901FB7023C00A81B46 /* ChoosenIngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosenIngredientCell.swift; sourceTree = "<group>"; };
 		5991FE0C1F970F1000B41D69 /* MealSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5991FE0F1F970F1000B41D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5991FE111F970F1000B41D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				59BBB5841F9E0D61005ADB4A /* Meal.swift */,
 				590CF0DB1FB2C21600C91FAF /* SearchViewController.swift */,
 				590CF0DD1FB2C29C00C91FAF /* IngredientCell.swift */,
+				59211B901FB7023C00A81B46 /* ChoosenIngredientCell.swift */,
 			);
 			path = MealSeek;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				590CF0DE1FB2C29C00C91FAF /* IngredientCell.swift in Sources */,
+				59211B911FB7023C00A81B46 /* ChoosenIngredientCell.swift in Sources */,
 				59BBB5811F9E0D34005ADB4A /* Ingredient.swift in Sources */,
 				590CF0DC1FB2C21600C91FAF /* SearchViewController.swift in Sources */,
 				59BBB57F1F9D9085005ADB4A /* FirebaseManager.swift in Sources */,

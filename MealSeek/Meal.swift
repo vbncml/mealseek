@@ -6,6 +6,22 @@
 //  Copyright © 2017 KBTU. All rights reserved.
 //
 
-public class Meal{
+class Meal{
+    var id: String
+    var name: String
+    var recipe: String
+   
+    
+    init(id: String, name: String,recipe: String){
+        self.id = id
+        self.name = name
+        self.recipe = recipe
+    }
+    
+    static func form(id: String, name: String, recipe: String)->Meal{
+        let result = Meal(id: id, name: name, recipe: recipe)
+        return result
+    }
+
     
 }

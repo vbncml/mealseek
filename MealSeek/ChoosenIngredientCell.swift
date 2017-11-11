@@ -1,16 +1,15 @@
 //
-//  IngredientCell.swift
+//  ChoosenIngredientCell.swift
 //  MealSeek
 //
-//  Created by Zhanat on 08.11.17.
+//  Created by Zhanat on 11.11.17.
 //  Copyright © 2017 KBTU. All rights reserved.
 //
 
 import UIKit
 
-class IngredientCell: UITableViewCell {
+class ChoosenIngredientCell: UITableViewCell {
     
-   
     @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

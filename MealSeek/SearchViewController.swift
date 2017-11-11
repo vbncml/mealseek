@@ -9,11 +9,16 @@
 import UIKit
 import Firebase
 
-class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     var rootRef: DatabaseReference! = nil
     var ingredients:[Ingredient] = []
     var choosenIngredients:[Ingredient] = []
+    var filteredIngredients:[Ingredient] = []
+    var isSearching = false
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var chTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         rootRef = Database.database().reference()
@@ -32,21 +37,87 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print(error.localizedDescription)
         
         }
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
         
         
     }
     
+    @IBAction func findRecipeBtnTapped(_ sender: Any) {
+        // go to listOfRecipes ViewController
+    }
+    
+    @IBAction func removeIngredientBtnTapped(_ sender: Any){
+        //remove from chIngredientsList
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ingredients.count
+        
+        if (tableView == tableView){
+            if isSearching
+            {
+                return filteredIngredients.count
+            }
+            else {
+            return ingredients.count
+            }
+        }
+        if (tableView == chTableView){
+            return choosenIngredients.count
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if (tableView == tableView){
         let cell = tableView.dequeueReusableCell(withIdentifier:
             "IngredientCell", for: indexPath) as? IngredientCell
-        cell?.label.text = ingredients[indexPath.row].name
-        return cell!
+            if isSearching{
+                cell?.label.text = filteredIngredients[indexPath.row].name
+            }
+            else {
+            cell?.label.text = ingredients[indexPath.row].name
+            }
+            return cell!
+        }
+        else {
+        let cell = tableView.dequeueReusableCell(withIdentifier:
+                "ChoosenIngredientCell", for: indexPath) as? ChoosenIngredientCell
+            cell?.label.text = choosenIngredients[indexPath.row].name
+            return cell!
+        }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.choosenIngredients.append(ingredients[indexPath.row-1])
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if (searchBar.text == nil || searchBar.text == ""){
+            isSearching = false
+            
+            view.endEditing(true)
+            tableView.reloadData()
+        }
+        else{
+            isSearching = true
+            filteredIngredients = ingredients.filter({$0.name == searchBar.text!})
+            tableView.reloadData()
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if isSearching {
+            self.tableView.isHidden = false
+            self.chTableView.isHidden = true
+        }
+        else {
+            self.tableView.isHidden = true
+            self.chTableView.isHidden = false
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
