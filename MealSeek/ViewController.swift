@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainImage: UIImageView!
     override func viewDidLoad() {
+        mainImage.image = UIImage(named:"main")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         

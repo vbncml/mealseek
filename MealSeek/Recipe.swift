@@ -8,20 +8,24 @@
 
 class Recipe{
     
-    var id: String
-    var ingredients: [String]
+    var id: Int
+    var mealName: String
+    var ingredients: [Int]
     var instruction: String
+    var imageUrl: String
     
     
-    init(id: String, ingredients: [String], instruction: String){
+    init(id: Int, mealName: String, ingredients: [Int], instruction: String, imageUrl:String){
         self.id = id
+        self.mealName = mealName
         self.ingredients = ingredients
         self.instruction = instruction
+        self.imageUrl = imageUrl
         
     }
     
-    static func form(id: String, ingredients: [String], instruction: String)->Recipe{
-        let result = Recipe(id: id, ingredients: ingredients, instruction: instruction)
+    static func form(id: Int,mealName: String , ingredients: [Int], instruction: String, imageUrl: String)->Recipe{
+        let result = Recipe(id: id, mealName: mealName, ingredients: ingredients, instruction: instruction, imageUrl: imageUrl)
         return result
     }
 
